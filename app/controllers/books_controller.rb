@@ -1,6 +1,9 @@
 class BooksController < ApplicationController
   before_action :set_book, only: [:show, :edit, :update, :destroy]
 
+  def view_helper_test
+  end
+
   # GET /books
   # GET /books.json
   def index
