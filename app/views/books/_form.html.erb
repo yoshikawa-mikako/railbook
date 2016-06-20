@@ -25,7 +25,7 @@
   </div>
   <div class="field">
     <%= f.label :publish %><br>
-    <%= f.text_field :publish %>
+    <%= f.collection_select (:publish, publish.all, :publishname, :publishname :include_blank => true) %>
   </div>
   <div class="field">
     <%= f.label :published %><br>
