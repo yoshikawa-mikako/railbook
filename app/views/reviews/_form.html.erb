@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :book_id %><br>
-    <%= f.text_field :book_id %>
+    <%= collection_select :review, :book_id, Book.all, :id, :title, :include_blank => true %>
   </div>
   <div class="field">
     <%= f.label :body %><br>
