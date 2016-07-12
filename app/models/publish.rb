@@ -1,3 +1,3 @@
 class Publish < ActiveRecord::Base
-has_many :book
+ has_many :book
 end
