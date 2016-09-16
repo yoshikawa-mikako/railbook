@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
-
-  before action :auth
+  skip_before_action :check_logined
+  before_action :auth
 
   # GET /users
   # GET /users.json
